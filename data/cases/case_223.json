@@ -1,0 +1,51 @@
+{
+  "id": "223",
+  "environment_prompt": "Deep inside a dark mine shaft. Wooden support beams lining a narrow rocky passage. Rail tracks running along the ground. Mineral veins glittering in the headlamp beam. Dust particles floating in the light cone. A faint warm glow from distant tunnel lights. Behind the viewer, the tunnel extends back toward a junction where a rusty ore cart sits on the tracks. Pickaxes and shovels lean against the rock wall at the junction. A ventilation shaft opening is visible in the ceiling further back.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, eye-level view looking straight down the narrow mine tunnel, headlamp illuminating the path ahead.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "mine_shaft",
+      "category": "Workspace"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_223.jpg",
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "turn": 1,
+      "type": "perspective_switch",
+      "action": "fp_to_tp",
+      "prompt": "The view switches from first-person to third-person, pulling back to reveal a miner in dirty overalls with a yellow hard hat, headlamp, and a pickaxe over the shoulder from behind."
+    },
+    {
+      "turn": 2,
+      "type": "perspective_switch",
+      "action": "tp_to_fp",
+      "prompt": "The view switches back to first-person, returning to the character's own eyes."
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "perspective_switch_adherence"
+  ]
+}

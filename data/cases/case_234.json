@@ -1,0 +1,50 @@
+{
+  "id": "234",
+  "environment_prompt": "A vast golden wheat field at sunset. The sun setting behind distant mountains, casting warm golden light. A small dark wooden barn in the middle distance to the right. Clear blue sky fading to warm orange near the horizon. Swaying grass and wheat stalks. Hidden within the tall wheat grass ahead, the dense vegetation is tall enough to conceal a large animal such as a bear before it emerges. Beyond the mountains, the atmosphere is open to incoming weather such as thick fog rolling in from the distance.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, standing eye-level view looking across the wheat field toward the setting sun and distant mountains.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "realistic",
+      "name": "wheat_field",
+      "category": "Nature"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_234.jpg",
+    "tracking_object": null,
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "A large brown bear emerges from the tall wheat grass ahead.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "A thick fog rolls in from the distant mountains, gradually obscuring the field.",
+      "turn": 2
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

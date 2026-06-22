@@ -1,0 +1,60 @@
+{
+  "id": "226",
+  "environment_prompt": "Inside a quiet, well-lit living room. A wooden dining table in the center. A clear glass filled three-quarters with water sits at the very edge of the table. A bookshelf in the background, a beige armchair, and windows with curtains letting in soft daylight. Orderly and calm interior. Below the table edge, a tiled or hardwood floor extends where the glass will land. The viewer's legs in jeans are visible below the table. A small area rug lies near the table base.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, seated eye-level view facing the table edge where the glass is placed, with a woman in a mauve sweater visible across the table.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "room",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_226.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "turn": 1,
+      "type": "event_edit",
+      "action": "The glass continues to tilt further and begins falling off the table edge. The woman reaches her hand out toward the glass."
+    },
+    {
+      "turn": 2,
+      "type": "event_edit",
+      "action": "The viewpoint follows the falling glass as it passes between the man's legs. Some water splashes onto the man's jeans."
+    },
+    {
+      "turn": 3,
+      "type": "event_edit",
+      "action": "The woman is still reaching for the glass but remains short of catching it. The glass continues to fall with its tilt angle increasing."
+    },
+    {
+      "turn": 4,
+      "type": "event_edit",
+      "action": "The woman fails to catch the glass. The glass lands on the floor upside down with its bottom facing up."
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

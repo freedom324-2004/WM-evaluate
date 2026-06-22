@@ -1,0 +1,58 @@
+{
+  "id": "172",
+  "environment_prompt": "A dim industrial warehouse aisle with concrete floors dusted with debris and scattered packing foam. Tall metal shelving units line both sides stacked with cardboard boxes, forming a long corridor. Overhead sodium lights cast warm hard shadows. A red propane gas canister lies on the ground near a toppled wooden pallet. Open cardboard boxes and crumpled brown paper are scattered around. A thin haze of dust hangs low near the ground. Behind the viewer, the aisle continues toward a loading dock with a metal roll-up shutter. The area beyond the gas canister contains additional pallets, loose packaging materials, and a fire extinguisher mounted on a wall bracket that could be dislodged by a blast.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, head-height camera aligned to the center of the warehouse aisle, looking straight down the corridor. No character body visible.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "warehouse",
+      "category": "Workspace"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_172.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "turn": 1,
+      "type": "navigation",
+      "action": "S"
+    },
+    {
+      "turn": 2,
+      "type": "event_edit",
+      "action": "The gas cylinder exploded."
+    }
+  ],
+  "nav_cate": "repeat",
+  "scene_adherence": {
+    "visible_part": "A dim industrial warehouse aisle with concrete floors dusted with debris and scattered packing foam. Tall metal shelving units line both sides stacked with cardboard boxes, forming a long corridor. Overhead sodium lights cast warm hard shadows. A red propane gas canister lies on the ground near a toppled wooden pallet. Open cardboard boxes and crumpled brown paper are scattered around. A thin haze of dust hangs low near the ground.",
+    "offscreen_part": "Behind the viewer, the aisle continues toward a loading dock with a metal roll-up shutter. The area beyond the gas canister contains additional pallets, loose packaging materials, and a fire extinguisher mounted on a wall bracket that could be dislodged by a blast.",
+    "visible_count": 6,
+    "offscreen_count": 2
+  },
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "navigation_trajectory",
+    "scene_adherence",
+    "event_edit_adherence"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "244",
+  "environment_prompt": "A dense urban Hong Kong street with tram tracks running down the center, tall mid-rise buildings tightly packed on both sides covered with colorful Chinese signage and neon billboards, busy commercial district with shops and pedestrians, modern skyscrapers in the background, overcast daylight with soft shadows, vibrant colors, wet pavement. Off-screen between buildings on the left: narrow alleyways and rooftop anchor points where a costumed figure could swing from on a rope. Off-screen to the right: more building facades and rooftop structures providing swing-away exit points above street level.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person point of view at street level, looking straight ahead along the tram tracks with strong one-point perspective and leading lines.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "realistic",
+      "name": "HongKong_Tram_Street",
+      "category": "Urban"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_244.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "A figure in a red and blue costume swings out from between the buildings on the left side on a rope and lands on the roof of the red double-decker tram.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "The costumed figure looks toward the viewer for a moment, then swings a rope upward and leaps away, disappearing to the right side of the frame.",
+      "turn": 2
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

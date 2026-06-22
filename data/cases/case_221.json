@@ -1,0 +1,51 @@
+{
+  "id": "221",
+  "environment_prompt": "Underwater above a vibrant coral reef. Colorful tropical fish swimming around branching corals. Sunlight piercing turquoise water from above, creating shimmering caustic patterns on the reef. A sea turtle gliding in the mid-distance. Behind and below the viewer, the coral reef slopes downward into a deeper sandy seabed. A dark underwater cave opening is visible in the reef wall to the lower left. Schools of smaller silver fish drift in the open water beyond the reef edge.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, underwater diving view looking forward and slightly downward over the coral reef.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "realistic",
+      "name": "coral_reef",
+      "category": "Nature"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_221.jpg",
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "turn": 1,
+      "type": "perspective_switch",
+      "action": "fp_to_tp",
+      "prompt": "The view switches from first-person to third-person, pulling back to reveal a scuba diver in a black and yellow wetsuit with twin silver air tanks on the back from behind."
+    },
+    {
+      "turn": 2,
+      "type": "perspective_switch",
+      "action": "tp_to_fp",
+      "prompt": "The view switches back to first-person, returning to the character's own eyes."
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "perspective_switch_adherence"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "242",
+  "environment_prompt": "A quiet traditional Japanese alley street, empty with no people. Stone-paved road leading straight into the distance. Old wooden houses on the left with warm brown and orange tones. Modern metal-clad buildings on the right with blue-gray walls. Overhead power lines crossing the sky. A yellow safety pole on the right side. Overcast soft daylight. Calm atmosphere. Around the corner of the left-side buildings, a side alley leads off where a person could emerge from. In the distance, a power line pole stands where the road narrows, connected by overhead wires. Above, the overcast sky has room for storm clouds to gather, darken, and produce rain and lightning.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, standing eye-level view looking straight down the alley in one-point perspective with deep depth of field.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "realistic",
+      "name": "Japanese_Street",
+      "category": "Urban"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_242.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "A woman in a red dress holding an umbrella walks out from around the corner and stops in the middle of the alley.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "The sky suddenly darkens with thick clouds gathering overhead, and light rain begins to fall.",
+      "turn": 2
+    },
+    {
+      "type": "event_edit",
+      "action": "The rain intensifies into a heavy downpour, and a bolt of lightning strikes a distant power line pole. The woman turns her head to look.",
+      "turn": 3
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

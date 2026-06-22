@@ -1,0 +1,57 @@
+{
+  "id": "250",
+  "environment_prompt": "A casual home kitchen with a gas stovetop, a carbon-steel wok with green leafy vegetables and minced garlic being stir-fried, steam rising, oil glistening on the food, a wooden cutting board beside the stove holding four to five seasoning bottles of various colors and types (soy sauce, vinegar, chili oil) including an oil bottle, a small dish of dried red chili peppers nearby, slightly worn countertop and wooden cabinets adding realism, warm kitchen lighting, a metal spatula resting against the wok edge.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person point of view looking down at the wok on the stovetop, one gloved hand visible from the bottom of the frame holding a metal spatula actively stirring, close-up cooking perspective.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "Cooking",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_250.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": "masks/case_250_mask.png"
+  },
+  "interactions": [
+    {
+      "type": "subject_action",
+      "action": "The viewer stops stir-frying, picks up an oil bottle, and pours oil into the hot wok.",
+      "turn": 1
+    },
+    {
+      "type": "subject_action",
+      "action": "The viewer adds chili peppers into the wok.",
+      "turn": 2
+    },
+    {
+      "type": "subject_action",
+      "action": "The viewer continues stir-frying the vegetables with the spatula.",
+      "turn": 3
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "perspective_consistency",
+    "subject_consistency",
+    "subject_action_adherence"
+  ]
+}

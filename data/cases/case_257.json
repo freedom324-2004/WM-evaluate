@@ -1,0 +1,55 @@
+{
+  "id": "257",
+  "environment_prompt": "A medieval castle armor gallery corridor with warm ochre plastered walls and a dark wooden beam ceiling with iron chandeliers, multiple full suits of polished metal knight armor displayed in tall glass cases along the left wall on dark wooden pedestals (the nearest suit closest to the viewer, a second suit further down the corridor), stained glass windows between the displays, warm reddish-brown herringbone brick tile floor, warm ambient lighting creating golden reflections on the metal surfaces, quiet historical museum atmosphere. In the far background: a few museum visitors examining the displays. Inside the second armor suit's visor: a dark cavity that can emit a red glow.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person point of view standing in the corridor, looking down the gallery with strong one-point perspective, the nearest armor suit closest on the left, visitors visible in the far background.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "Castle_Armor_Gallery",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_257.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "A red glow flickers behind the visor of the second armor suit in the display case, and the armor begins to move slightly.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "The armor punches through the glass case, shattering it. Visitors in the distance turn their heads to look.",
+      "turn": 2
+    },
+    {
+      "type": "event_edit",
+      "action": "The distant visitors show terrified expressions, begin screaming, and run away.",
+      "turn": 3
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

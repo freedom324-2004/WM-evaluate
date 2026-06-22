@@ -1,0 +1,51 @@
+{
+  "id": "237",
+  "environment_prompt": "An urban canal towpath. Blue and dark red narrowboats moored on calm canal water. A brick wall with blue graffiti art on the left, ivy-covered buildings above. Modern apartment buildings with glass balconies on the right bank. Stone slab path. Overcast daylight with reflections on the water. Above the canal, open sky stretches wide enough for a flying creature such as a dragon to pass overhead and cast a reflection on the water below. Beneath the canal surface, the water is deep and calm enough for submerged objects like a kayak to float up to the surface.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, walking eye-level view looking forward along the towpath beside the canal.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "realistic",
+      "name": "canal_towpath",
+      "category": "Urban"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": "",
+      "movement": ""
+    },
+    "initial_image": "images/case_237.jpg",
+    "tracking_object": null,
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "A dragon flies over the canal.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "A colorful kayak floats up to the surface of the canal water.",
+      "turn": 2
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

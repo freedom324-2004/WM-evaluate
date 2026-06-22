@@ -1,0 +1,62 @@
+{
+  "id": "262",
+  "environment_prompt": "A sunlit greenhouse interior with rows of green potted plants and colorful flowers lining both sides, metal pipes and rotatable sprinkler heads mounted on the glass ceiling (all currently off), a dry red brick path running between the plant rows, warm golden light streaming through the glass roof panels, lush and vibrant botanical atmosphere. Connected to the ceiling pipes: a pressurized water supply that, once activated, causes the sprinkler heads to rotate and emit fine mist that drifts down onto the plant leaves and eventually pools on the brick floor between the pots.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person point of view standing inside the greenhouse, looking down the central brick path, both hands in green gardening gloves visible at the bottom of the frame, palms open.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "greenhouse",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_262.jpg",
+    "tracking_object": null,
+    "style_new": "styled",
+    "subject_mask": "masks/case_262_mask.png"
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "The sprinkler heads on the ceiling begin to rotate.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "Fine water mist sprays out from the rotating sprinkler heads.",
+      "turn": 2
+    },
+    {
+      "type": "event_edit",
+      "action": "Water droplets accumulate on the leaves of the plants below.",
+      "turn": 3
+    },
+    {
+      "type": "event_edit",
+      "action": "Small puddles form on the brick floor between the plant pots.",
+      "turn": 4
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "perspective_consistency",
+    "subject_consistency",
+    "event_edit_adherence"
+  ]
+}

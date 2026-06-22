@@ -1,0 +1,50 @@
+{
+  "id": "239",
+  "environment_prompt": "An urban canal towpath. Narrowboats moored on calm canal water. A brick wall with blue graffiti art on the left, ivy and greenery above. Modern apartment buildings on the right bank. Stone slab path. Overcast daylight with still water reflections. The canal extends in both directions with enough open waterway for a fast-moving jetski to speed through, splashing water against the moored narrowboats. Above, the overcast sky is wide and open enough for a drifting hot air balloon to float into the frame.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, walking eye-level view looking forward along the towpath beside the canal.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "realistic",
+      "name": "canal_towpath",
+      "category": "Nature"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_239.jpg",
+    "tracking_object": null,
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "A jetski speeds down the canal, splashing water against the moored narrowboats.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "A red hot air balloon drifts into view from the sky above the canal.",
+      "turn": 2
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

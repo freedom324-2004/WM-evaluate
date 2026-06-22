@@ -1,0 +1,68 @@
+{
+  "id": "175",
+  "environment_prompt": "A vast, dimly lit old library with towering dark wooden bookshelves stretching floor to ceiling on both sides of a narrow central aisle. Shelves are densely packed with leather-bound books of various sizes and colors, some slightly protruding. The aisle extends deep into the background, fading into soft amber light from a distant reading lamp. A vaulted stone ceiling is faintly visible above. The wooden plank floor shows age. Light enters from a small arched window at the far end, with dust particles drifting through the beams. To the right, perpendicular aisles branch off between shelf rows leading to additional reading nooks. To the left, the shelves continue densely packed, with the books on the left side neatly arranged on the shelves.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, head-height camera looking straight down the narrow library aisle toward the distant amber light. No character body visible.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "library",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_175.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "turn": 1,
+      "type": "navigation",
+      "action": "W"
+    },
+    {
+      "turn": 2,
+      "type": "navigation",
+      "action": "right"
+    },
+    {
+      "turn": 3,
+      "type": "navigation",
+      "action": "left"
+    },
+    {
+      "turn": 4,
+      "type": "event_edit",
+      "action": "Most of the books on the left bookshelf toppled over."
+    }
+  ],
+  "nav_cate": "progressive",
+  "scene_adherence": {
+    "visible_part": "A vast, dimly lit old library has towering dark wooden bookshelves stretching floor to ceiling on both sides of a narrow central aisle. The shelves are densely packed with leather-bound books of various sizes and colors, some slightly protruding. The aisle extends deep into the background, fading into soft amber light from a distant reading lamp. A vaulted stone ceiling is faintly visible above. The wooden plank floor shows age. Light enters from a small arched window at the far end. The shelves on the left side continue densely packed, with the books on the left side neatly arranged on the shelves.",
+    "offscreen_part": "Dust particles drift through the beams of light coming from the small arched window at the far end. To the right, perpendicular aisles branch off between shelf rows leading to additional reading nooks.",
+    "visible_count": 7,
+    "offscreen_count": 2
+  },
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "navigation_trajectory",
+    "scene_adherence",
+    "event_edit_adherence"
+  ]
+}

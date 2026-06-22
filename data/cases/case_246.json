@@ -1,0 +1,56 @@
+{
+  "id": "246",
+  "environment_prompt": "A modern minimalist living room with a neutral beige-and-wood color palette, a large L-shaped light-colored sectional sofa with soft gray cushions, a round low wooden coffee table on a circular jute area rug, a built-in wall unit with open shelves featuring warm ambient lighting and decorative objects, a large wall-mounted flat-screen TV on a white ribbed panel wall, floor-to-ceiling windows on the right side with operable handles allowing abundant natural daylight, light wood flooring, elegant and calm atmosphere. Off-screen to the left: an adjacent hallway or room entrance from which a person can walk into the living room. Beyond the floor-to-ceiling windows: an outdoor balcony or garden area with fresh air that can enter once the window is opened.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person point of view at standing eye height, wide-angle interior perspective looking toward the TV wall and sofa area.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "Livingroom",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_246.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "The wall-mounted TV turns on, displays a brief startup animation, and then begins playing a cartoon.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "A woman wearing blue clothing enters from the left side of the frame and walks to the sofa.",
+      "turn": 2
+    },
+    {
+      "type": "subject_action",
+      "action": "The woman walks to the floor-to-ceiling window and opens it.",
+      "turn": 3
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence",
+    "subject_action_adherence"
+  ]
+}

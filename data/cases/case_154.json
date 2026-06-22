@@ -1,0 +1,50 @@
+{
+  "id": "154",
+  "environment_prompt": "A bright, well-furnished living room with a wooden dining table in the foreground. Behind the table is a cozy space with an armchair, a bookshelf, windows with natural light, and a pendant lamp overhead. The room has light-colored walls, hardwood flooring, and a calm, orderly atmosphere. A clear glass filled about three-quarters with water sits at the very edge of the table, precariously close to tipping. Below the table edge, the hardwood floor extends without a rug, meaning any fallen glass would shatter on the hard surface and spill water across the boards. A woman in a mauve sweater sits on the opposite side of the table within arm's reach of the glass.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person seated POV at table level. The viewer's knee and torso edge are faintly visible at the lower-left of the frame. The camera faces across the table toward a woman in a mauve sweater sitting on the opposite side, with the glass of water prominently placed at the table edge between them.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "room",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_154.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "turn": 1,
+      "type": "event_edit",
+      "action": "In slow motion, the cup begins to fall downward as the woman reaches out to grab it."
+    },
+    {
+      "turn": 2,
+      "type": "event_edit",
+      "action": "She catches the cup while it is suspended horizontally in midair."
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "256",
+  "environment_prompt": "A white desk surface with a white cable and a crumpled brown paper bag in the background, simple and clean desk environment with minimal clutter, soft indoor lighting, neutral tones. The foil wrapper of the gum package conceals a milky white gum stick inside that becomes visible when unwrapped.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person point of view looking down at the desk, right hand visible holding a small rectangular silver foil-wrapped mint gum package, close-up perspective focused on the hand and the package.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "Desktop_Gum",
+      "category": "Workspace"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_256.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": "masks/case_256_mask.png"
+  },
+  "interactions": [
+    {
+      "turn": 1,
+      "type": "subject_action",
+      "action": "The viewer flips the gum package over to its other side and then flips it back."
+    },
+    {
+      "turn": 2,
+      "type": "subject_action",
+      "action": "The viewer unwraps the foil packaging, revealing the milky white gum stick inside."
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "perspective_consistency",
+    "subject_consistency",
+    "subject_action_adherence"
+  ]
+}

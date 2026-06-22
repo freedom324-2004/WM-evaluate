@@ -1,0 +1,61 @@
+{
+  "id": "181",
+  "environment_prompt": "A large modern vending machine dominating the frame, set against a dimly lit concrete wall in a public space. Behind the clear glass display window, multiple rows of food and drinks are neatly arranged: soda cans, bottled water, juice boxes, milk cartons, chips, and packaged snacks. Each item has a visible price label. The machine's interior is brightly lit with white LEDs, contrasting with the dim surroundings. To the right of the glass, a payment panel with a bill acceptor and coin slot. The machine shows slight wear from frequent use. At the bottom of the machine, a pickup compartment with a hinged flap door awaits dispensed items. A coin return slot sits below the payment panel. Inside the machine behind the glass, a spiral coil mechanism holds each product row, ready to rotate and drop a selected item into the dispensing chute.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, standing directly in front of the vending machine at eye height, facing the display window straight on. No character body visible.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "hall",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_181.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "subject_action",
+      "action": "Insert banknotes into the vending machine.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "The vending machine dispensed the change in coins.",
+      "turn": 2
+    },
+    {
+      "type": "event_edit",
+      "action": "A bottle of Coca-Cola fell off the shelf.",
+      "turn": 3
+    },
+    {
+      "type": "subject_action",
+      "action": "Take the Coke from the pick-up slot.",
+      "turn": 4
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence",
+    "subject_action_adherence"
+  ]
+}

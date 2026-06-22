@@ -1,0 +1,68 @@
+{
+  "id": "266",
+  "environment_prompt": "A clean, well-lit home kitchen interior. A stainless steel gas stove with six black control knobs sits at center. A spice rack stands to the left, a wooden cutting board to the right. Behind the stove, a kitchen window lets in warm afternoon sunlight. Granite countertops, tidy surfaces. A stainless steel kettle sits on the front burner with a blue gas flame underneath. The kettle has a spout facing slightly to the right and a lid on top.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person view, eye-level, looking straight ahead at the gas stove. The viewer's hands rest on the counter edge at the bottom of the frame.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "kitchen",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_266.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": "masks/case_266_mask.png"
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "The kettle starts rumbling.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "Steam shoots from the spout.",
+      "turn": 2
+    },
+    {
+      "type": "event_edit",
+      "action": "The kitchen window fogs up.",
+      "turn": 3
+    },
+    {
+      "type": "subject_action",
+      "action": "Turn off the gas stove knob with the right hand.",
+      "turn": 4
+    },
+    {
+      "type": "event_edit",
+      "action": "The flame goes out and steam fades.",
+      "turn": 5
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "perspective_consistency",
+    "subject_consistency",
+    "event_edit_adherence",
+    "subject_action_adherence"
+  ]
+}

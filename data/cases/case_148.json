@@ -1,0 +1,50 @@
+{
+  "id": "148",
+  "environment_prompt": "An indoor anime-style room with a wooden table in the foreground. On the table sits a large transparent glass containing a small amount of red liquid at the bottom. Behind the table is a cozy room interior with a bed on the left, a window, and shelving or cabinets in pastel tones on the right. The scene uses flat cel-shaded rendering with simplified shapes, clean edges, and solid colors. On the far side of the table, a boy stands holding a plastic bottle filled with green liquid, cap still sealed. Additional kitchen items such as a small towel and a plate rest on the table surface just outside the initial frame.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person point of view at table height, looking straight ahead across the tabletop toward the standing figure on the opposite side. No visible character body; the camera acts as the viewer's eyes.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "anime",
+      "name": "room",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_148.jpg",
+    "tracking_object": null,
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "The boy twists open the cap of a plastic bottle.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "The boy pours the liquid into a glass bottle.",
+      "turn": 2
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

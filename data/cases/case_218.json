@@ -1,0 +1,51 @@
+{
+  "id": "218",
+  "environment_prompt": "Atop a snow-covered mountain peak. Panoramic views of snow-capped peaks stretching to the horizon under a clear blue sky. Fine snow particles whipping in the wind. Colorful prayer flags fluttering on a rope line nearby. Bright sunlight overhead. Behind the viewer, a rocky ridge descends toward a snow-filled couloir. Below the summit, a narrow climbing trail with fixed ropes leads back down the mountainside.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, standing position at summit level, looking outward across the mountain range.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "realistic",
+      "name": "snow_peak",
+      "category": "Nature"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_218.jpg",
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "turn": 1,
+      "type": "perspective_switch",
+      "action": "fp_to_tp",
+      "prompt": "The view switches from first-person to third-person, pulling back to reveal a mountaineer in a bright red down jacket with an ice axe in hand and a coiled climbing rope over the shoulder from behind."
+    },
+    {
+      "turn": 2,
+      "type": "perspective_switch",
+      "action": "tp_to_fp",
+      "prompt": "The view switches back to first-person, returning to the character's own eyes."
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "perspective_switch_adherence"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "139",
+  "environment_prompt": "A cozy cafe interior in flat illustration style with warm muted tones and minimal shading. A simple wooden table in the foreground with two steaming mugs and a croissant on a plate, next to a window with soft curtains filtering afternoon light. A potted plant on a shelf in the background, a barista preparing drinks behind an open kitchen counter. Relaxing and inviting atmosphere. Below the table, a leather bag rests on the tiled floor beside the chair leg. Beyond the window, a quiet cobblestone street with a parked bicycle and a small bookshop across the road are faintly visible through the curtains.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person point of view seated at the wooden table, looking across the cafe interior toward the kitchen counter and window. No visible character body.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "cafe",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_139.jpg",
+    "tracking_object": null,
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "subject_action",
+      "action": "Pick up the cup.",
+      "turn": 1
+    },
+    {
+      "type": "subject_action",
+      "action": "Take a sip of coffee.",
+      "turn": 2
+    },
+    {
+      "type": "subject_action",
+      "action": "Put down the teacup.",
+      "turn": 3
+    },
+    {
+      "type": "subject_action",
+      "action": "Eat bread.",
+      "turn": 4
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "subject_action_adherence"
+  ]
+}

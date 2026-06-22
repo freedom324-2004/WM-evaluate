@@ -1,0 +1,83 @@
+{
+  "id": "186",
+  "environment_prompt": "An outdoor cafe table on a city sidewalk. On the round white marble table, a latte in a white ceramic cup with a saucer and an open paperback book. Above, the scalloped edge of a retractable beige canvas awning is visible at the top of the frame. Across the street, shop fronts with display windows and a few pedestrians walking by. The sky is overcast with grey clouds, no rain yet. The street pavement is dry. The space beneath the table provides shelter where items can be stored to stay dry. The awning above is retractable canvas that can be lifted and flipped by strong wind gusts. The street pavement ahead will accumulate puddles and wet reflections as rain intensifies, and will glisten with sunlight when the weather clears.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, seated at the cafe table at eye height. The viewer's hands rest casually on the table edge at the bottom of the frame. Looking forward across the table toward the street and shops.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "realistic",
+      "name": "street_cafe",
+      "category": "Urban"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_186.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": "masks/case_186_mask.png"
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "Dark clouds roll in overhead.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "Rain begins to fall on the street.",
+      "turn": 2
+    },
+    {
+      "type": "subject_action",
+      "action": "Close the book on the table.",
+      "turn": 3
+    },
+    {
+      "type": "event_edit",
+      "action": "The rain intensifies, splashing on the pavement.",
+      "turn": 4
+    },
+    {
+      "type": "subject_action",
+      "action": "Pick up the coffee cup and take a sip.",
+      "turn": 5
+    },
+    {
+      "type": "event_edit",
+      "action": "A strong gust flips the awning edge upward, letting rain onto the table.",
+      "turn": 6
+    },
+    {
+      "type": "subject_action",
+      "action": "Stand up and move the book under the table.",
+      "turn": 7
+    },
+    {
+      "type": "event_edit",
+      "action": "The rain eases to a drizzle, and sunlight breaks through the clouds.",
+      "turn": 8
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "perspective_consistency",
+    "subject_consistency",
+    "event_edit_adherence",
+    "subject_action_adherence"
+  ]
+}

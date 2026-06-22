@@ -1,0 +1,50 @@
+{
+  "id": "245",
+  "environment_prompt": "A modern minimalist bedroom with a low-profile dark wood bed frame, white bedding and soft gray blankets, built-in white wardrobe with a vertical glass display section showing decorative objects, light marble flooring, a dark bedside table with a black modern desk lamp, soft ambient ceiling lighting, tidy and uncluttered space, contemporary interior design, a closed dark wooden door recessed into the wall on the right side. Off-screen behind the door: a hallway or corridor where a woman carrying a teacup can approach and enter the room.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person point of view at standing eye height, looking straight on at the bed and storage wall from across the room.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "Bedroom",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_245.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "The bedroom door opens and a woman carrying a teacup walks in, speaking toward the viewer.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "The woman throws the teacup onto the floor, then throws herself onto the bed.",
+      "turn": 2
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

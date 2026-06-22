@@ -1,0 +1,51 @@
+{
+  "id": "235",
+  "environment_prompt": "An urban canal towpath. Blue and dark red narrowboats moored on the calm canal water to the right. A brick wall with large blue graffiti art on the left, green ivy growing over the buildings above. Modern apartment buildings with glass balconies on the right bank. Stone slab paving. Overcast daylight. Ahead along the towpath, the path curves around a corner where pedestrians or costumed runners could appear. On the right bank, bushes and low vegetation line the water's edge where animals could emerge onto the path.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, walking eye-level view looking forward along the towpath beside the canal.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "realistic",
+      "name": "canal_towpath",
+      "category": "Nature"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": "",
+      "movement": ""
+    },
+    "initial_image": "images/case_235.jpg",
+    "tracking_object": null,
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "A chicken-costume runner appears.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "A golden retriever dashes out from the bushes on the bank and runs along the towpath.",
+      "turn": 2
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

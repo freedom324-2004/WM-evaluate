@@ -1,0 +1,50 @@
+{
+  "id": "240",
+  "environment_prompt": "A vast golden wheat field at sunset. Sun setting behind distant mountains with warm golden light. A small dark wooden barn to the right. Tall wheat grass swaying gently. Clear sky fading to orange at the horizon. Beyond the visible field, a dirt farm track leads toward the barn where a tractor could approach from. The open terrain allows wind gusts to sweep unobstructed across the entire field, bending the wheat uniformly from one direction.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, standing eye-level view looking across the wheat field toward the setting sun and mountains.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "realistic",
+      "name": "wheat_field",
+      "category": "Nature"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_240.jpg",
+    "tracking_object": null,
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "A red tractor drives through the wheat field, approaching slowly.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "A strong gust of wind sweeps across the field, causing the wheat stalks to sway violently.",
+      "turn": 2
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

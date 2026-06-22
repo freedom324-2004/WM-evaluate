@@ -1,0 +1,50 @@
+{
+  "id": "232",
+  "environment_prompt": "A vast golden wheat field at sunset. The sun setting behind distant mountains, casting warm golden light across the swaying grass. A small dark wooden barn in the middle distance to the right. Clear blue sky fading to warm orange near the horizon. Wheat stalks at waist height forming a sea of golden texture. Beyond the mountains, the open sky extends high enough for hot air balloons to rise and drift into view. Overhead, the sky transitions from warm orange to deeper blue, with space for gathering clouds and rainfall.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, standing eye-level view looking across the wheat field toward the setting sun and distant mountains.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "realistic",
+      "name": "wheat_field",
+      "category": "Nature"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_232.jpg",
+    "tracking_object": null,
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "Colorful hot air balloons rise up from behind the mountains into the sunset sky.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "Dark clouds gather overhead and it begins to rain across the wheat field.",
+      "turn": 2
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

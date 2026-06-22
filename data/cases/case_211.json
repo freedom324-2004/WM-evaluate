@@ -1,0 +1,51 @@
+{
+  "id": "211",
+  "environment_prompt": "Professional basketball arena during a game. Polished wooden court with court markings. A large scoreboard hangs above center court showing the score. Packed stands with cheering spectators on all sides. Bright arena floodlights illuminate the court from above. Basketball hoop and backboard visible ahead. From the forward #23's viewpoint near the basket, the hoop and backboard loom close overhead, defenders in red jerseys close by, and the point guard is visible across the court near the three-point line with the ball. Team benches and coaching staff line the near sideline.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person low view from a point guard's position on the court, dribbling a basketball. Teammates in white jerseys and opponents in red jerseys are positioned on the court ahead.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "basketball_arena",
+      "category": "Sports/Game"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_211.jpg",
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "turn": 1,
+      "type": "perspective_switch",
+      "action": "fp_to_fp: cut to forward #23, now seeing the basket up close and the point guard across the court",
+      "prompt": "The first-person view switches from point guard, seeing teammates and opponents, dribbling the basketball to forward #23, now seeing the basket up close and the point guard across the court."
+    },
+    {
+      "turn": 2,
+      "type": "perspective_switch",
+      "action": "fp_to_fp: cut back to point guard, seeing teammates and opponents, dribbling the basketball",
+      "prompt": "The first-person view switches back from forward #23, now seeing the basket up close and the point guard across the court to point guard, seeing teammates and opponents, dribbling the basketball."
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "perspective_switch_adherence"
+  ]
+}

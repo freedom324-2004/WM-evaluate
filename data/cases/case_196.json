@@ -1,0 +1,51 @@
+{
+  "id": "196",
+  "environment_prompt": "Dim medieval castle corridor with stone walls and floor. Torch sconces on both walls cast flickering orange light. Stone arches span the ceiling. A heavy wooden door with iron reinforcements stands at the far end. A tattered red banner hangs on the left wall. Behind the viewer, the corridor extends further back with additional torch-lit stone arches, a side alcove with an old wooden bench, and a narrow staircase leading up to the ramparts.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person view through the knight's eyes, looking down the corridor toward the wooden door.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "fantasy",
+      "name": "castle_corridor",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_196.jpg",
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "turn": 1,
+      "type": "perspective_switch",
+      "action": "fp_to_tp",
+      "prompt": "The view switches from first-person to third-person, pulling back to reveal a knight in full silver plate armor with a red cape and a longsword sheathed at the hip from behind."
+    },
+    {
+      "turn": 2,
+      "type": "perspective_switch",
+      "action": "tp_to_fp",
+      "prompt": "The view switches back to first-person, returning to the character's own eyes."
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "perspective_switch_adherence"
+  ]
+}

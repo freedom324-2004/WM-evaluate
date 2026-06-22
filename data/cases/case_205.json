@@ -1,0 +1,51 @@
+{
+  "id": "205",
+  "environment_prompt": "Space battleship gunner cockpit interior. A wide viewport reveals a star-filled void with colorful nebulae. An enemy cruiser is visible in the distance with a red target lock indicator. The ship's main cannons extend from the lower frame. Holographic control panels with glowing blue and orange buttons and displays surround the seat on both sides. Through the targeting display at magnified zoom, the enemy cruiser's hull markings, turret emplacements, fighter escort formation, and shield generator arrays become visible in detail, along with floating space debris and asteroid fragments drifting nearby.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person view from the gunner seat, looking out through the main viewport toward the enemy cruiser in space.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "scifi",
+      "name": "space_battleship",
+      "category": "Fantasy"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_205.jpg",
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "turn": 1,
+      "type": "perspective_switch",
+      "action": "fp_to_scope",
+      "prompt": "The character aims down the sights. The view transitions into a holographic rectangular targeting display with distance readout, target lock indicators, and crosshair."
+    },
+    {
+      "turn": 2,
+      "type": "perspective_switch",
+      "action": "scope_to_fp",
+      "prompt": "The character lowers the weapon. The view returns to normal first-person perspective."
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "perspective_switch_adherence"
+  ]
+}

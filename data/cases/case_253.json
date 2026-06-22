@@ -1,0 +1,52 @@
+{
+  "id": "253",
+  "environment_prompt": "A desert-like industrial compound with corrugated metal structures and shipping containers on both sides, DANGER and KEEP OUT warning signs, a narrow sandy pathway between the structures, a metal gate opening on the left side, wooden beams and a skeletal canopy overhead casting sharp shadows, bright sunlight with strong contrast, dusty ground with warm yellow tones, tight corridor-like layout guiding the eye forward, immersive combat-zone atmosphere. Off-screen behind the left gate: an enemy position from which a smoke grenade can be thrown. In the distance ahead down the corridor: open space from which a flashbang grenade can be lobbed toward the viewer.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person FPS game view with a modern assault rifle (equipped with a holographic sight) held in the lower right foreground, aimed forward down the corridor, classic shooter game camera position.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "fantasy",
+      "name": "ShootGame",
+      "category": "Sports/Game"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_253.jpg",
+    "tracking_object": null,
+    "style_new": "styled",
+    "subject_mask": "masks/case_253_mask.png"
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "A smoke grenade is thrown out from the gate on the left, exploding into a cloud of smoke.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "A flashbang grenade is thrown from the distance and detonates, filling the center of the screen with blinding white light. The viewer raises a hand to shield from the intense light.",
+      "turn": 2
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "perspective_consistency",
+    "subject_consistency",
+    "event_edit_adherence"
+  ]
+}

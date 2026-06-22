@@ -1,0 +1,65 @@
+{
+  "id": "268",
+  "environment_prompt": "An underground subway station platform. A dark arched tunnel entrance on the left side. Clean grey concrete platform with a bright yellow safety line along the edge. Fluorescent tube lights on the ceiling. An illuminated advertising lightbox on the wall. Well-lit, urban transit atmosphere. Deep inside the dark tunnel, a silver subway train is approaching along the tracks, its headlights not yet visible. The train interior is brightly lit with seated passengers ready to disembark.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person view, eye-level, standing on the platform looking along the tracks toward the tunnel entrance. Several passengers visible ahead on the platform.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "subway_station",
+      "category": "Urban"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_268.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "Headlights appear in the tunnel.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "Wind blows from the tunnel onto the platform.",
+      "turn": 2
+    },
+    {
+      "type": "event_edit",
+      "action": "The train pulls into the station.",
+      "turn": 3
+    },
+    {
+      "type": "event_edit",
+      "action": "The doors open.",
+      "turn": 4
+    },
+    {
+      "type": "event_edit",
+      "action": "Passengers step off the train.",
+      "turn": 5
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

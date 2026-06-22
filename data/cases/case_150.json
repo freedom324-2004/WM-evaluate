@@ -1,0 +1,50 @@
+{
+  "id": "150",
+  "environment_prompt": "A CG-rendered urban plaza with a ‘PLAZA LOOP’ street sign visible in the foreground. The open concrete area is flanked by modern multi-story buildings with glass and brick facades. Metal railings, low concrete benches, steps, a trash can, and lampposts populate the space. The lighting suggests daytime with clear shadows on the ground. The overall look is clean and stylized in a video-game CG aesthetic. Beyond the central open area, a long metal handrail runs along a raised concrete ledge on the far side of the plaza, suitable for skateboard grinding. A set of wide concrete stairs descends to a lower level on the left. Scattered pedestrians and parked bicycles occupy the periphery near the building entrances.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person observer POV at human eye level, looking across the plaza. The camera is stationary, framed between two vertical poles in the foreground, watching the skateboarder move through the open space in the middle distance.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "realistic",
+      "name": "city",
+      "category": "Urban"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_150.jpg",
+    "tracking_object": null,
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "The boy jumps into the air on his skateboard, spins, and then lands.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "The boy turns around on his skateboard and slides along a metal railing.",
+      "turn": 2
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

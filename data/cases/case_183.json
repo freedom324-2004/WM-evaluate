@@ -1,0 +1,50 @@
+{
+  "id": "183",
+  "environment_prompt": "A Chinese ancient xianxia town viewed from a bird’s-eye perspective. Traditional Chinese buildings with grey-tiled rooftops arranged in a layered layout, including residential houses, quiet courtyards, and taverns with red lanterns. Narrow streets busy with tiny figures of people and vendors. Scattered spirit beasts and mystical artifacts with subtle blue-green glowing effects among the streets. Misty mountains rise in the background. A few flying figures on swords leave faint light trails in the cloudy sky above. Chinese ink wash aesthetic with muted colors and atmospheric mist. Chinese calligraphy characters visible in the lower right corner. Among the buildings, a prominent two-story restaurant with a tiled roof and open balcony stands near the town center, from which cultivators may burst out through the roof or doorway. The open sky above is layered with drifting clouds, providing ample space for sword-flying cultivators to traverse back and forth.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective from a god-like bird’s-eye viewpoint, looking down at the ancient town from high above. No character body visible. The camera hovers at a steep downward angle over the rooftops.",
+  "settings": {
+    "scene": {
+      "environment": "outdoor",
+      "attribute": "myth",
+      "name": "street",
+      "category": "Urban"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_183.jpg",
+    "tracking_object": null,
+    "style_new": "styled",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "turn": 1,
+      "type": "event_edit",
+      "action": "Immortal cultivators were flying back and forth in the sky."
+    },
+    {
+      "turn": 2,
+      "type": "event_edit",
+      "action": "Someone flew out of the restaurant."
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

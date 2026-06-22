@@ -1,0 +1,60 @@
+{
+  "id": "228",
+  "environment_prompt": "Inside a dim industrial warehouse aisle. Concrete floors dusted with fine debris and scattered packing foam. Metal shelving forming long corridors on both sides stacked with cardboard boxes. Overhead sodium lights casting hard orange shadows. A red propane canister lying on the floor near a toppled wooden pallet. Open cardboard boxes and loose packaging material on the ground. A thin haze of dust hanging low. Above on the shelves, more unstable cardboard boxes are stacked close to the edge, some slightly overhanging. Further down the aisle, additional wooden pallets and combustible packaging materials line the floor on both sides.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, standing eye-level view looking straight down the warehouse aisle toward the far end.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "warehouse",
+      "category": "Workspace"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_228.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "turn": 1,
+      "type": "event_edit",
+      "action": "A cardboard box slides off the shelf and strikes the red propane canister on the ground, causing the canister to begin rolling slowly down the aisle."
+    },
+    {
+      "turn": 2,
+      "type": "event_edit",
+      "action": "The propane canister continues rolling with gradually decreasing speed, while white gas vapor starts leaking from its valve."
+    },
+    {
+      "turn": 3,
+      "type": "event_edit",
+      "action": "The propane canister explodes violently, producing an intense flash of light and a powerful shockwave."
+    },
+    {
+      "turn": 4,
+      "type": "event_edit",
+      "action": "The explosion subsides and thick smoke fills the aisle. The ceiling lights dim to a faint flicker, leaving only the glow of burning materials on the ground to illuminate the scene."
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence"
+  ]
+}

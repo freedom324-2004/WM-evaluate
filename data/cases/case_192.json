@@ -1,0 +1,88 @@
+{
+  "id": "192",
+  "environment_prompt": "A modern open-plan office with rows of workstations separated by low grey fabric partitions. At the far end of the aisle, a large white office printer on a stand and a blue water dispenser are clearly visible against the back wall. Fluorescent ceiling panel lights illuminate the space. Multiple monitors, keyboards, and office supplies on nearby desks. The atmosphere is a typical corporate daytime office setting. In the right aisle, colleagues occasionally walk past carrying boxes or documents. Above the exit doors, green illuminated emergency exit signs are mounted near the ceiling, which glow distinctly when the main lights go out. The printer at the far end has an output tray where printed pages collect.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person perspective, seated at a desk looking straight down the office aisle. On the desk, a monitor with a lit screen, a black keyboard and mouse. A white coffee cup to the left and a stack of printed documents to the right. The viewer's hands rest beside the keyboard at the bottom of the frame.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "open_office",
+      "category": "Workspace"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_192.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": "masks/case_192_mask.png"
+  },
+  "interactions": [
+    {
+      "type": "subject_action",
+      "action": "Pick up the coffee cup and take a sip.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "A colleague walks past in the right aisle carrying a box.",
+      "turn": 2
+    },
+    {
+      "type": "subject_action",
+      "action": "Type on the keyboard.",
+      "turn": 3
+    },
+    {
+      "type": "event_edit",
+      "action": "The printer in the distance starts printing, paper feeding out.",
+      "turn": 4
+    },
+    {
+      "type": "subject_action",
+      "action": "Stand up and walk to the printer.",
+      "turn": 5
+    },
+    {
+      "type": "subject_action",
+      "action": "Pick up the printed pages from the output tray.",
+      "turn": 6
+    },
+    {
+      "type": "subject_action",
+      "action": "Walk back and sit down at the desk.",
+      "turn": 7
+    },
+    {
+      "type": "event_edit",
+      "action": "The overhead lights flicker and go out.",
+      "turn": 8
+    },
+    {
+      "type": "event_edit",
+      "action": "Emergency exit signs glow green in the darkened office.",
+      "turn": 9
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "perspective_consistency",
+    "subject_consistency",
+    "event_edit_adherence",
+    "subject_action_adherence"
+  ]
+}

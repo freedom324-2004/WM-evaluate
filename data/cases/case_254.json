@@ -1,0 +1,56 @@
+{
+  "id": "254",
+  "environment_prompt": "A modern indoor stairwell with clean white walls, light gray concrete floors and steps, stainless steel handrails on both sides, stairs descending to a mid-landing and then further down to a lower landing, a white door with a blue accessibility sign at the bottom, bright fluorescent overhead tube lighting with motion-sensor automatic control, anti-slip grooved metal edges on each step, sterile institutional atmosphere typical of a modern office or hospital. Below the stairs and behind the lower door: a lower floor corridor from which a person can walk up the staircase toward the viewer.",
+  "character_prompt": "First-person viewer.",
+  "perspective_prompt": "First-person point of view standing at the upper landing, looking down the descending staircase toward the lower landing and door below.",
+  "settings": {
+    "scene": {
+      "environment": "indoor",
+      "attribute": "realistic",
+      "name": "Stairwell",
+      "category": "Indoor"
+    },
+    "perspective": "first_person",
+    "subject": {
+      "type": "unknown",
+      "desc": ""
+    },
+    "initial_image": "images/case_254.jpg",
+    "tracking_object": null,
+    "style_new": "photorealistic",
+    "subject_mask": null
+  },
+  "interactions": [
+    {
+      "type": "event_edit",
+      "action": "The automatic lights turn off, plunging the entire scene into dimness, though the surroundings remain faintly visible.",
+      "turn": 1
+    },
+    {
+      "type": "event_edit",
+      "action": "A muscular Black man walks up the stairs from below.",
+      "turn": 2
+    },
+    {
+      "type": "subject_action",
+      "action": "The man stomps his foot on the ground, and the automatic lights turn back on.",
+      "turn": 3
+    }
+  ],
+  "nav_cate": "none",
+  "metric_list": [
+    "aesthetic_quality",
+    "imaging_quality",
+    "temporal_flickering",
+    "dynamic_degree",
+    "motion_smoothness",
+    "hpsv3_quality",
+    "background_consistency",
+    "segment_continuity",
+    "geometric_consistency",
+    "photometric_consistency",
+    "visual_plausibility",
+    "event_edit_adherence",
+    "subject_action_adherence"
+  ]
+}
