@@ -42,6 +42,7 @@ class BaseVideoModel(ABC):
         case: Dict[str, Any],
         output_path: str,
         data_root: str = "data",
+        **gen_kwargs,
     ) -> Dict[str, Any]:
         """
         Generate a multi-turn video from a case definition.
@@ -83,6 +84,7 @@ class BaseVideoModel(ABC):
                 turn=i + 1,
                 action=interaction.get("action", ""),
                 interaction_type=interaction.get("type", ""),
+                **gen_kwargs,
             )
 
             if result.get("code") != 0:

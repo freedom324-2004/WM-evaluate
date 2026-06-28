@@ -26,3 +26,10 @@ Thumbs.db
 # Temporary
 *.log
 *.tmp
+
+# Generated outputs
+output_videos/
+video_cache/
+
+# Temporary frames from multi-turn generation
+_tmp_frames/

@@ -37,7 +37,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-def generate_case(model, case: dict, output_dir: str, data_root: str) -> dict:
+def generate_case(model, case: dict, output_dir: str, data_root: str, **gen_kwargs) -> dict:
     """Generate multi-turn video for a single case."""
     case_id = case["id"]  # 从传入的测试用例字典中提取 case 的唯一 ID
     
@@ -48,6 +48,7 @@ def generate_case(model, case: dict, output_dir: str, data_root: str) -> dict:
         case=case,
         output_path=output_path,
         data_root=data_root,
+        **gen_kwargs,
     )
     return result
 
@@ -56,17 +57,19 @@ def main():
     parser = argparse.ArgumentParser(description="WBench video generation")
     parser.add_argument("--model", required=True, help=f"Model name. Available: {list_models()}")
     parser.add_argument("--data_dir", default="data", help="Path to data/ directory")
-    parser.add_argument("--output_dir", default="output_videos", help="Output dir (default: work_dirs/<model>/videos)")
+    parser.add_argument("--output_dir", default=None, help="Output dir (default: output_videos/<model>)")
     parser.add_argument("--cases", nargs="*", help="Specific case JSON files to process")
     parser.add_argument("--limit", type=int, default=None, help="Max cases to process")
     parser.add_argument("--resume", action="store_true", help="Skip cases with existing videos")
+    parser.add_argument("--duration", type=float, default=4.0, help="Video duration per turn in seconds (default: 4.0)")
+    parser.add_argument("--resolution", type=str, default="720P", help="Video resolution (default: 720P)")
     args = parser.parse_args()
 
     model = get_model(args.model)
     logger.info(f"Using model: {model}")
     
-    # 确定最终的输出目录：如果用户指定了就用用户的，否则使用默认规范路径 "work_dirs/模型名/videos"
-    output_dir = args.output_dir or os.path.join("work_dirs", args.model, "videos")
+    # 确定最终的输出目录：如果用户指定了就用用户的，否则使用默认规范路径 "output_videos/模型名"
+    output_dir = args.output_dir or os.path.join("output_videos", args.model)
     os.makedirs(output_dir, exist_ok=True)
 
 
@@ -101,7 +104,8 @@ def main():
         logger.info(f"[{i+1}/{len(cases)}] case_{case_id}: generating...")
         
         # 核心调用：执行当前用例的视频生成任务
-        result = generate_case(model, case, output_dir, args.data_dir)
+        result = generate_case(model, case, output_dir, args.data_dir,
+                               duration=args.duration, resolution=args.resolution)
 
         if result.get("code") == 0:
             results["success"] += 1

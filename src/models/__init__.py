@@ -13,6 +13,7 @@ from .base import BaseVideoModel
 from .text.wan import WanModel
 from .text.kling import KlingModel
 from .text.seedance import SeedanceModel
+from .text.veo import VeoModel
 from .camera.example_model import PreviewCameraModel
 from .action.example_model import PreviewActionModel
 
@@ -20,6 +21,7 @@ MODEL_REGISTRY: Dict[str, Type[BaseVideoModel]] = {
     "wan": WanModel,
     "kling": KlingModel,
     "seedance": SeedanceModel,
+    "veo": VeoModel,
     "camera_preview": PreviewCameraModel,
     "action_preview": PreviewActionModel,
 }

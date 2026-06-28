@@ -1,9 +1,9 @@
 """
-Wan 2.7 video generation model (I2V via AtlasCloud).
+Veo 3.1 Fast video generation model (I2V via AtlasCloud).
 
 Usage:
-    from src.models.text import WanModel
-    model = WanModel()
+    from src.models.text import VeoModel
+    model = VeoModel()
     result = model.generate(prompt="...", image="path/to/image.jpg")
 """
 import os
@@ -14,11 +14,11 @@ from .api_client import AtlasCloudAPIClient
 from .prompt_builder import build_turn_prompt
 
 
-class WanModel(BaseVideoModel):
-    """Wan 2.7 I2V model via API."""
+class VeoModel(BaseVideoModel):
+    """Veo 3.1 Fast I2V model via AtlasCloud."""
 
     def __init__(self, api_url: str = "", api_key: str = ""):
-        super().__init__(model_name="wan")
+        super().__init__(model_name="veo")
         self._client = AtlasCloudAPIClient(
             base_url=api_url or os.environ.get("VIDEO_API_URL", "https://api.atlascloud.ai"),
             api_key=api_key or os.environ.get("VIDEO_API_KEY", ""),
@@ -26,9 +26,9 @@ class WanModel(BaseVideoModel):
 
     def get_model_info(self) -> Dict[str, Any]:
         return {
-            "model_name": "wan2.7",
+            "model_name": "veo3.1-fast",
             "api_url": self._client.base_url,
-            "class": "WanModel",
+            "class": "VeoModel",
         }
 
     def generate(
@@ -37,14 +37,16 @@ class WanModel(BaseVideoModel):
         image: Optional[str] = None,
         **kwargs,
     ) -> Dict[str, Any]:
-        model_name = "alibaba/wan-2.7/image-to-video"
         return self._client.generate(
-            model_name=model_name,
+            model_name="google/veo3.1-fast/image-to-video",
             prompt=prompt,
             image=image,
             duration=int(kwargs.get("duration", 4)),
-            resolution=kwargs.get("resolution", "720P"),
-            prompt_extend=False,
+            resolution=kwargs.get("resolution", "720p").lower(),
+            aspect_ratio=kwargs.get("aspect_ratio", "16:9"),
+            generate_audio=kwargs.get("generate_audio", False),
+            seed=kwargs.get("seed", -1),
+            negative_prompt=kwargs.get("negative_prompt", ""),
         )
 
     def _build_turn_prompt(self, case: Dict[str, Any], interaction: Dict[str, Any], turn_index: int) -> str:
