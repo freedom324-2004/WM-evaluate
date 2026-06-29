@@ -16,6 +16,7 @@ from .text.seedance import SeedanceModel
 from .text.veo import VeoModel
 from .camera.example_model import PreviewCameraModel
 from .action.example_model import PreviewActionModel
+from .local.cogvideo import CogVideoModel
 
 MODEL_REGISTRY: Dict[str, Type[BaseVideoModel]] = {
     "wan": WanModel,
@@ -24,6 +25,7 @@ MODEL_REGISTRY: Dict[str, Type[BaseVideoModel]] = {
     "veo": VeoModel,
     "camera_preview": PreviewCameraModel,
     "action_preview": PreviewActionModel,
+    "cogvideo": CogVideoModel,
 }
 
 
