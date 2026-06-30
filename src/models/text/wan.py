@@ -38,12 +38,16 @@ class WanModel(BaseVideoModel):
         **kwargs,
     ) -> Dict[str, Any]:
         model_name = "alibaba/wan-2.7/image-to-video"
+        output_path = kwargs.pop("output_path", None)
+        meta_keys = {"turn", "action", "interaction_type"}
+        gen_kwargs = {k: v for k, v in kwargs.items() if k not in meta_keys}
         return self._client.generate(
             model_name=model_name,
             prompt=prompt,
             image=image,
-            duration=int(kwargs.get("duration", 4)),
-            resolution=kwargs.get("resolution", "720P"),
+            output_path=output_path,
+            duration=int(gen_kwargs.get("duration", 4)),
+            resolution=gen_kwargs.get("resolution", "720P"),
             prompt_extend=False,
         )
 

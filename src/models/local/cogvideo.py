@@ -166,12 +166,6 @@ class CogVideoModel(LocalVideoModel):
         else:
             num_frames = kwargs.get("num_frames", DEFAULT_NUM_FRAMES)
 
-        # During warm-up / small test, clamp to a safe value
-        # 预热/小规模测试期间，限制到安全值
-        # (remove after confirming the pipeline works)
-        # （确认管线工作正常后可移除此行）
-        num_frames = min(num_frames, 13)   # ~0.5 s at 24 fps  ~0.5 秒 @ 24 fps
-
         guidance_scale = kwargs.get("guidance_scale", 6.0)
         seed = kwargs.get("seed", None)
 

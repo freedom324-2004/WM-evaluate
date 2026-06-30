@@ -63,6 +63,7 @@ class APIVideoClient:
         prompt: str,
         image: Optional[str] = None,
         duration: float = 4.0,
+        output_path: Optional[str] = None,
         **kwargs,
     ) -> Dict[str, Any]:
         """
@@ -73,6 +74,7 @@ class APIVideoClient:
             prompt: Text prompt
             image: Path to conditioning image (for I2V)
             duration: Video duration in seconds
+            output_path: Local path to save the video. If None, auto-generate under video_cache/.
 
         Returns:
             {"code": 0, "video_path": "..."} or {"code": -1, "error": "..."}
@@ -88,11 +90,14 @@ class APIVideoClient:
             return {"code": -1, "error": f"Generation failed or timed out: {task_id}"}
 
         # Download  第三步：下载视频
-        # 在本地创建一个缓存目录，路径形如：video_cache/kling-v3/
-        cache_dir = os.path.join("video_cache", model_name.replace("/", "_"))
-        os.makedirs(cache_dir, exist_ok=True)
-        # 拼接本地视频文件的保存路径
-        output_path = os.path.join(cache_dir, f"{task_id}.mp4")
+        if output_path is None:
+            # 如果未指定 output_path，使用原来的自动路径
+            cache_dir = os.path.join("video_cache", model_name.replace("/", "_"))
+            os.makedirs(cache_dir, exist_ok=True)
+            output_path = os.path.join(cache_dir, f"{task_id}.mp4")
+        else:
+            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
         # 调用下载方法，如果成功则返回 code 0 和本地路径
         if self._download(video_url, output_path):
             return {"code": 0, "video_path": output_path}

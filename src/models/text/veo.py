@@ -37,16 +37,20 @@ class VeoModel(BaseVideoModel):
         image: Optional[str] = None,
         **kwargs,
     ) -> Dict[str, Any]:
+        output_path = kwargs.pop("output_path", None)
+        meta_keys = {"turn", "action", "interaction_type"}
+        gen_kwargs = {k: v for k, v in kwargs.items() if k not in meta_keys}
         return self._client.generate(
             model_name="google/veo3.1-fast/image-to-video",
             prompt=prompt,
             image=image,
-            duration=int(kwargs.get("duration", 4)),
-            resolution=kwargs.get("resolution", "720p").lower(),
-            aspect_ratio=kwargs.get("aspect_ratio", "16:9"),
-            generate_audio=kwargs.get("generate_audio", False),
-            seed=kwargs.get("seed", -1),
-            negative_prompt=kwargs.get("negative_prompt", ""),
+            output_path=output_path,
+            duration=int(gen_kwargs.get("duration", 4)),
+            resolution=gen_kwargs.get("resolution", "720p").lower(),
+            aspect_ratio=gen_kwargs.get("aspect_ratio", "16:9"),
+            generate_audio=gen_kwargs.get("generate_audio", False),
+            seed=gen_kwargs.get("seed", -1),
+            negative_prompt=gen_kwargs.get("negative_prompt", ""),
         )
 
     def _build_turn_prompt(self, case: Dict[str, Any], interaction: Dict[str, Any], turn_index: int) -> str:

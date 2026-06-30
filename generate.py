@@ -47,6 +47,7 @@ def generate_case(model, case: dict, output_dir: str, data_root: str, **gen_kwar
     result = model.generate_multi_turn(
         case=case,
         output_path=output_path,
+        output_dir=output_dir,
         data_root=data_root,
         **gen_kwargs,
     )

@@ -42,6 +42,7 @@ class BaseVideoModel(ABC):
         case: Dict[str, Any],
         output_path: str,
         data_root: str = "data",
+        output_dir: Optional[str] = None,
         **gen_kwargs,
     ) -> Dict[str, Any]:
         """
@@ -73,10 +74,20 @@ class BaseVideoModel(ABC):
 
         segments = []  # 用于存放每一轮生成的视频片段的路径
         current_image = initial_image  # 核心变量：当前轮次作为输入的图片
+        case_id = case.get("id", "unknown")  # 获取 case ID，用于构建缓存目录
         # 2. 循环阶段：遍历测试用例中的每一轮交互（例如：第一轮前进，第二轮左转）
         for i, interaction in enumerate(interactions):
             # 拼装这一轮的提示词
             prompt = self._build_turn_prompt(case=case, interaction=interaction, turn_index=i)
+            
+            # 如果指定了 output_dir，则为每一轮构造独立的输出路径
+            turn_kwargs = dict(gen_kwargs)
+            if output_dir:
+                turn_output_dir = os.path.join(output_dir, "video_cache", f"case_{case_id}")
+                os.makedirs(turn_output_dir, exist_ok=True)
+                turn_output_path = os.path.join(turn_output_dir, f"case_{case_id}_{i+1:02d}.mp4")
+                turn_kwargs["output_path"] = turn_output_path
+            
             # 调用子类实现的 generate 方法生成单段视频
             result = self.generate(
                 prompt=prompt,
@@ -84,7 +95,7 @@ class BaseVideoModel(ABC):
                 turn=i + 1,
                 action=interaction.get("action", ""),
                 interaction_type=interaction.get("type", ""),
-                **gen_kwargs,
+                **turn_kwargs,
             )
 
             if result.get("code") != 0:

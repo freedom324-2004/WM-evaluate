@@ -114,14 +114,17 @@ class LocalVideoModel(BaseVideoModel):
 
             # Strip multi-turn bookkeeping kwargs before forwarding
             # 在转发之前剥离多轮记账关键字参数
-            meta_keys = {"turn", "action", "interaction_type"}
+            meta_keys = {"turn", "action", "interaction_type", "output_path"}
+            # Extract output_path if provided, so _save_frames can use it
+            # 提取 output_path（如果有），以便 _save_frames 使用
+            output_path = kwargs.get("output_path", None)
             gen_kwargs = {k: v for k, v in kwargs.items() if k not in meta_keys}
 
             frames = self._generate_frames(prompt, image=image, **gen_kwargs)
             if not frames:
                 return {"code": -1, "error": "No frames returned from model"}
 
-            video_path = self._save_frames(frames, fps=kwargs.get("fps", 24))
+            video_path = self._save_frames(frames, fps=kwargs.get("fps", 24), output_path=output_path)
             return {"code": 0, "video_path": video_path}
 
         except Exception as e:

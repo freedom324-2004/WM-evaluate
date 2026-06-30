@@ -61,12 +61,16 @@ class KlingModel(BaseVideoModel):
             return {"code": -1, "error": "Kling requires an input image (I2V only)"}
         backend = os.environ.get("KLING_BACKEND", "official")
         model_name = "kwaivgi/kling-v3.0-std/image-to-video" if backend == "atlas" else "kling-v3"
+        output_path = kwargs.pop("output_path", None)
+        meta_keys = {"turn", "action", "interaction_type"}
+        gen_kwargs = {k: v for k, v in kwargs.items() if k not in meta_keys}
         return self._client.generate(
             model_name=model_name,
             prompt=prompt,
             image=image,
-            duration=kwargs.get("duration", 4.0),
-            resolution=kwargs.get("resolution", "720P"),
+            output_path=output_path,
+            duration=gen_kwargs.get("duration", 4.0),
+            resolution=gen_kwargs.get("resolution", "720P"),
         )
 
     def _build_turn_prompt(self, case: Dict[str, Any], interaction: Dict[str, Any], turn_index: int) -> str:
